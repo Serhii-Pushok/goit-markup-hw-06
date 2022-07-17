@@ -872,9 +872,15 @@ background-color: var(--bcg-secondary-color);
     border-radius: 2px;
 }
 
+.checkbox:focus-visible + .icon {
+    outline-offset: 2px;
+    outline: 2px solid var(--accent-color);
+}
+
 .checkbox:checked + .icon {
     background-color: var(--accent-color);
-    border: var(--accent-color)
+    border: var(--accent-color);
+    outline: none;
 }
 
 .checkbox-field a {
